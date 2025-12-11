@@ -153,15 +153,4 @@ Built in Power BI, the Meta Ads Campaign Performance Dashboard visualizes advert
 5. Static report:
    - Open Meta_Ads_Performance_Report.pdf for a snapshot of insights
 
-## Contributing & Contact
-- Contributing: Fork the repo, create a branch (feature/...), and submit a PR. Include a short description of changes and sample screenshots where useful.
-- Issues: Open an issue for bugs, data questions, or feature requests.
-- Contact: (please update preferred contact info — email or LinkedIn)
-
-## Changelog
-- v1.0  README cleanup and improved structure (2025-12-11)
-
----
-
-Notes
-- This update was applied directly to main at the request of the repository owner.
+## Ernest Agai Appreciates your time here.
