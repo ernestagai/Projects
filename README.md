@@ -1,6 +1,7 @@
 # Project: Meta Ads Performance Analysis
 A real-time Power BI analytics project designed to transform Meta Ads data into actionable insights and maximize Return on Ad Spend (ROAS) across Facebook and Instagram campaigns.
 The project demonstrates end-to-end expertise — from data cleaning in Excel to data modeling and advanced DAX analytics in Power BI
+<img width="958" height="549" alt="image" src="https://github.com/user-attachments/assets/eefe8ac9-758c-43c4-bbe7-a4681d166953" />
 
 
 
