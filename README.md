@@ -1,132 +1,167 @@
-# Project: Meta Ads Performance Analysis
-A real-time Power BI analytics project designed to transform Meta Ads data into actionable insights and maximize Return on Ad Spend (ROAS) across Facebook and Instagram campaigns.
-The project demonstrates end-to-end expertise — from data cleaning in Excel to data modeling and advanced DAX analytics in Power BI
-<img width="958" height="549" alt="image" src="https://github.com/user-attachments/assets/eefe8ac9-758c-43c4-bbe7-a4681d166953" />
+# Meta Ads Performance Analysis
 
+A real-time Power BI analytics project that transforms Meta Ads data (Facebook & Instagram) into actionable insights to maximize Return on Ad Spend (ROAS).
 
+Summary
+- End-to-end solution: data cleaning in Excel, ETL, data modeling and advanced DAX analytics in Power BI.
+- Includes clean datasets, a Power BI (.pbix) dashboard, and a PDF report with static insights.
 
+## Table of Contents
+- [Project Summary](#project-summary)
+- [Objectives](#objectives)
+- [Workflow](#workflow)
+  - [Data Extraction](#data-extraction)
+  - [Data Cleaning (Excel)](#data-cleaning-excel)
+  - [Data Loading & Modeling (Power BI)](#data-loading--modeling-power-bi)
+  - [Data Analysis (DAX)](#data-analysis-dax)
+  - [Visualization & Insights](#visualization--insights)
+- [Key Features](#key-features)
+- [Performance Overview](#performance-overview)
+- [Analytical Insights](#analytical-insights)
+- [Strategic Recommendations](#strategic-recommendations)
+- [Tools & Technologies](#tools--technologies)
+- [How to Explore](#how-to-explore)
+- [Contributing & Contact](#contributing--contact)
+- [Changelog](#changelog)
 
-Facebook Dashboard
-Project Summary
-The Meta Ads Campaign Performance Dashboard provides a holistic visualization of advertising performance across Meta platforms.
-It integrates data analytics, business intelligence, and marketing optimization to reveal how audience demographics, ad formats, and campaign timing affect engagement and conversion.
+## Project Summary
+Built in Power BI, the Meta Ads Campaign Performance Dashboard visualizes advertising performance across Meta platforms and surfaces insights about audience demographics, ad formats, and timing to optimize engagement and conversions.
 
-Built in Power BI, this dashboard leverages advanced DAX functions, interactive filters, and clean data modeling to deliver clear, decision-ready insights that improve ad targeting and budget allocation.
+## Objectives
+- Analyze multi-platform ad performance across Facebook & Instagram
+- Understand engagement by demographics and region
+- Compare performance across ad formats (Image, Carousel, Stories, Video)
+- Generate insights to optimize ROI and guide strategic decisions
 
-Project Objectives
-Analyze multi-platform ad performance across Facebook & Instagram
-Understand audience engagement and behavior by demographics and region
-Compare performance across ad formats (Image, Carousel, Stories, Video)
-Generate insights to optimize ad ROI and guide strategic decision-making
-Project Workflow
-This project followed a structured ETL (Extract, Transform, Load) process:
+## Workflow
 
-Data Extraction:
+### Data Extraction
+- Export raw datasets from Meta Ads Manager covering user engagement, ad events, and campaign metadata.
 
-Collected raw datasets exported from Meta Ads Manager covering user engagement, ad events, and campaign metadata.
-Data Cleaning (Excel):
+### Data Cleaning (Excel)
+- Cleaned and standardized data in Excel:
+  - Removed duplicates and inconsistencies
+  - Normalized date/time formats
+  - Handled missing values
+  - Created calculated columns for engagement and cost metrics
+- Final cleaned datasets:
+  - ad_events_cleaned.csv
+  - ads_campaigns_cleaned.csv
+  - ads_cleaned.csv
+  - users_cleaned.csv
 
-Cleaned and standardized data in Microsoft Excel, including:
-Removing duplicates and inconsistencies
-Normalizing date/time formats
-Handling missing values
-Creating calculated columns for engagement and cost metrics
-Finalized four clean datasets used in Power BI:
-ad_events_cleaned.csv
-ads_campaigns_cleaned.csv
-ads_cleaned.csv
-users_cleaned.csv
-Data Loading & Modeling (Power BI):
+### Data Loading & Modeling (Power BI)
+- Imported cleaned files into Power BI Desktop (.pbix)
+- Established relationships:
+  - ads_campaigns  ad_events (Campaign_ID)
+  - ads  ad_events (Ad_ID)
+  - users  ad_events (User_ID)
+- Built a star-schema model with measures and calculated columns for performant analysis
 
-Imported cleaned Excel files into Power BI
-Established data model relationships across the four datasets
-ads_campaigns → ad_events (Campaign_ID)
-ads → ad_events (Ad_ID)
-users → ad_events (User_ID)
-Built a star-schema data model with measures and calculated columns.
-Data Analysis (DAX):
+### Data Analysis (DAX)
+- Implemented advanced DAX measures:
+  - CTR (Click-Through Rate)
+  - Engagement Rate
+  - Conversion Rate
+  - Purchase Rate
+  - ROAS (Return on Ad Spend)
+- Created dynamic KPI cards and calculated tables to support slicers and drill-through
 
-Implemented advanced DAX measures for performance calculations:
-CTR (Click-Through Rate)
-Engagement Rate
-Conversion Rate
-Purchase Rate
-ROAS (Return on Ad Spend)
-Created dynamic KPI cards and calculated tables.
-Visualization & Insight Design:
-<img width="958" height="549" alt="image" src="https://github.com/user-attachments/assets/b00c270d-a7a5-4b8e-b21d-15b92d46669a" />
-<img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/55de102d-9842-4bf8-9f82-a796eb6c52bc" />
-Key Features
-Feature	Description
-Cross-Platform Integration	Unified data model combining both Facebook and Instagram performance
-Interactive Filters	Dynamic slicers for platform, gender, region, and age segments
-Advanced DAX Analytics	Custom KPIs such as CTR, Engagement, Conversion, ROAS, and Purchase Rate
-Demographic Insights	Visualization of user engagement by Age, Gender, and Country
-Temporal Trends	Hourly, Daily, and Weekly performance metrics
-Ad Format Comparison	CTR, Engagement, and Conversion rates across Carousel, Image, Stories, and Video ads
-Actionable Recommendations	Data-driven strategies to optimize creative, targeting, and scheduling
-Performance Overview
-Cross-Platform Highlights
-Impressions: 339K+
-Clicks: 40K+
-Engagement Rate: 13.6%
-CTR: 11.8%
-Conversion Rate: 5.0%
-Total Ad Budget: $2.5M
-Average Campaign Budget: $50.7K
-Top-Performing Demographics
-Age Range: 18–30 years
-Gender: Female
-Regions: India, United States, Germany, United Kingdom, Brazil
-Peak Activity Periods
-Days: Wednesday – Friday
-Time: 5 PM – 9 PM (local time)
-Analytical Insights
-Audience Behavior
-Female audiences dominate engagement, especially on Facebook.
-Instagram shows more balanced gender engagement.
-Young adults (18–30) exhibit the strongest response and conversion rates.
-Geographic Distribution
-India and the U.S. generate the highest impressions and engagement volume.
-Germany and the U.K. demonstrate stronger purchase conversion performance.
-Ad Format Effectiveness
-Ad Format	CTR	Engagement Rate	Conversion Rate
-Video Ads	12.0%	13.7%	5.05%
-Stories Ads	11.85%	13.6%	5.0%
-Carousel Ads	11.75%	13.4%	4.9%
-Image Ads	11.7%	13.5%	4.75%
-Strategic Recommendations
-Focus on video and story-based creatives for higher engagement.
-Simplify checkout and landing pages to lift conversion rates.
-Use Meta Advantage+ and Custom Audiences for precision retargeting.
-Schedule ads during 5–9 PM midweek when engagement peaks.
-Reallocate budget dynamically:
-Prioritize awareness campaigns in India and U.S.
-Drive conversion campaigns in U.K. and Germany.
-Localize creative messaging to align with cultural preferences.
-Continuously A/B test creatives, CTAs, and ad copy.
-Integrate AI-based alerts to detect performance drops early.
-Tools & Technologies
-Category	Tools / Techniques
-Data Cleaning	Microsoft Excel (Pivot Tables, Conditional Formatting, Data Validation)
-Data Modeling	Power BI Data Model (Relationships, Hierarchies, Calculated Tables)
-Analytics	Advanced DAX (CALCULATE, FILTER, ALL, RELATED, SWITCH, VAR)
-Visualization	Power BI Interactive Dashboard (Cards, Charts, Maps, Matrix)
-Data Source	Meta Ads Manager (Facebook & Instagram)
-How to Explore
-Review the datasetsin Data Folder:
+### Visualization & Insights
+- Interactive dashboards with slicers for platform, gender, region, and age
+- Pages include KPI Summary, Audience Trends, Ad Format Comparison, and Campaign Deep Dive
 
-ad_events_cleaned.csv
-ads_campaigns_cleaned.csv
-ads_cleaned.csv
-users_cleaned.csv
-Open the dashboard:
+<!-- Images (kept from original repo) -->
 
-Load Meta_Ads_Performance_Dashboard.pbix in Power BI Desktop.
-Explore key visuals:
+![Dashboard overview](https://github.com/user-attachments/assets/eefe8ac9-758c-43c4-bbe7-a4681d166953)
 
-Use filters to analyze by platform, region, or ad type.
-View the KPI Summary, Audience Trends, and Ad Format Comparison pages.
-View the report summary:
+![Audience & format comparison](https://github.com/user-attachments/assets/b00c270d-a7a5-4b8e-b21d-15b92d46669a)
 
-Open Meta_Ads_Performance_Report.pdf for a static insight overview.
+![Additional visual](https://github.com/user-attachments/assets/55de102d-9842-4bf8-9f82-a796eb6c52bc)
+
+## Key Features
+- Cross-Platform Integration: Unified data model for Facebook & Instagram
+- Interactive Filters: Platform, gender, region, age
+- Advanced DAX Analytics: Custom KPIs (CTR, Engagement, Conversion, ROAS)
+- Demographic Insights: Visuals by Age, Gender, Country
+- Temporal Trends: Hourly, Daily, Weekly metrics
+- Ad Format Comparison: CTR, Engagement, Conversion across formats
+- Actionable Recommendations: Data-driven strategies for creative, targeting, and scheduling
+
+## Performance Overview (sample metrics)
+
+| Metric | Value |
+|---|---:|
+| Impressions | 339,000+ |
+| Clicks | 40,000+ |
+| Engagement Rate | 13.6% |
+| CTR | 11.8% |
+| Conversion Rate | 5.0% |
+| Total Ad Budget | $2.5M |
+| Avg Campaign Budget | $50.7K |
+
+## Top-performing Demographics & Timing
+- Age: 1830 years
+- Gender: Female
+- Regions: India, United States, Germany, United Kingdom, Brazil
+- Peak activity: WednesdayFriday, 5 PM9 PM (local time)
+
+## Analytical Insights
+- Audience behavior
+  - Female audiences drive higher engagement on Facebook
+  - Instagram shows more balanced gender engagement
+  - Young adults (1830) have highest response and conversion rates
+- Geographic distribution
+  - India and U.S. generate highest impressions and engagement
+  - Germany and U.K. show stronger purchase conversion performance
+- Ad format effectiveness (example metrics)
+  - Video Ads  CTR 12.0% / Engagement 13.7% / Conversion 5.05%
+  - Stories  CTR 11.85% / Engagement 13.6% / Conversion 5.0%
+  - Carousel  CTR 11.75% / Engagement 13.4% / Conversion 4.9%
+  - Image  CTR 11.7% / Engagement 13.5% / Conversion 4.75%
+
+## Strategic Recommendations (Quick Wins)
+- Prioritize video and story creatives for higher engagement.
+- Simplify checkout and landing pages to improve conversions.
+- Use Meta Advantage+ and Custom Audiences for precise retargeting.
+- Schedule campaigns midweek 59 PM local time.
+- Reallocate budget dynamically: awareness in India & US; conversion focus in UK & Germany.
+- Localize creatives for cultural relevance.
+- Continuously A/B test creatives, CTAs, and landing pages.
+- Integrate AI-based alerts for early detection of performance drops.
+
+## Tools & Technologies
+- Data cleaning: Microsoft Excel (Pivot Tables, Conditional Formatting, Data Validation)
+- Data modeling: Power BI (relationships, hierarchies, calculated tables)
+- Analytics: Advanced DAX (CALCULATE, FILTER, ALL, RELATED, SWITCH, VAR)
+- Visualization: Power BI interactive visuals (cards, charts, maps, matrix)
+- Data source: Meta Ads Manager (Facebook & Instagram)
+
+## How to Explore
+1. Review datasets in the Data folder:
+   - ad_events_cleaned.csv
+   - ads_campaigns_cleaned.csv
+   - ads_cleaned.csv
+   - users_cleaned.csv
+2. Open the dashboard:
+   - Load Meta_Ads_Performance_Dashboard.pbix in Power BI Desktop
+3. Use filters to analyze by platform, region, or ad type
+4. Explore pages:
+   - KPI Summary — overview of campaign health
+   - Audience Trends — demographic performance
+   - Ad Format Comparison — format-level effectiveness
+5. Static report:
+   - Open Meta_Ads_Performance_Report.pdf for a snapshot of insights
+
+## Contributing & Contact
+- Contributing: Fork the repo, create a branch (feature/...), and submit a PR. Include a short description of changes and sample screenshots where useful.
+- Issues: Open an issue for bugs, data questions, or feature requests.
+- Contact: (please update preferred contact info — email or LinkedIn)
+
+## Changelog
+- v1.0  README cleanup and improved structure (2025-12-11)
+
+---
+
+Notes
+- This update was applied directly to main at the request of the repository owner.
