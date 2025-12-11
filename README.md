@@ -54,16 +54,8 @@ Purchase Rate
 ROAS (Return on Ad Spend)
 Created dynamic KPI cards and calculated tables.
 Visualization & Insight Design:
-
-Developed two interactive report pages:
-Facebook Performance Dashboard
-Instagram Performance Dashboard
-Facebook Dashboard
-Figure 2: Facebook Dashboard — key KPIs, demographics, and engagement trends.
-
-Instagram Dashboard
-Figure 3: Instagram Dashboard — performance summary and audience insights.
-
+<img width="958" height="549" alt="image" src="https://github.com/user-attachments/assets/b00c270d-a7a5-4b8e-b21d-15b92d46669a" />
+<img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/55de102d-9842-4bf8-9f82-a796eb6c52bc" />
 Key Features
 Feature	Description
 Cross-Platform Integration	Unified data model combining both Facebook and Instagram performance
@@ -138,4 +130,3 @@ View the KPI Summary, Audience Trends, and Ad Format Comparison pages.
 View the report summary:
 
 Open Meta_Ads_Performance_Report.pdf for a static insight overview.
-ects
